@@ -1,6 +1,13 @@
-const sq = function (x=2) {
-    let ans =0;
-    ans = x*x;
-    return ans;
+function yel(f1,f2) {
+    console.log("whatsup");
+    f1(f2);
 }
-console.log("the ans"+ sq());
+
+function bl(f2) {
+    console.log("blue");
+    f2();
+}
+function rel() {
+    console.log("yooooooooooo");
+}
+yel(bl,rel);
